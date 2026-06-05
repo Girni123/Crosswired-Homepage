@@ -4,938 +4,158 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Crosswired — Der Digitale Produktpass für wegweisende Modemarken. EU-konform, NFC-gesichert, designorientiert." />
-  <meta name="theme-color" content="#06060A" />
-  <title>Crosswired — Digitaler Produktpass für Modemarken</title>
+  <meta name="theme-color" content="#000000" />
+  <title>Crosswired — Digitaler Produktpass</title>
 
-  <!-- Preconnect for fonts -->
+  <!-- Fonts: Space Grotesk for that technical, brutalist feel -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicon inline SVG -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2306060A'/><line x1='8' y1='16' x2='24' y2='16' stroke='%23A4EF2C' stroke-width='2'/><line x1='16' y1='8' x2='16' y2='24' stroke='%23A4EF2C' stroke-width='2'/><rect x='10' y='10' width='12' height='12' rx='2' fill='none' stroke='%23A4EF2C' stroke-width='1.5'/></svg>" />
 </head>
-
 <body>
 
-  <!-- ══════════════════════════════════════════════════
-       AMBIENT BACKGROUND ORBS (fixed, behind everything)
-  ══════════════════════════════════════════════════ -->
-  <div id="ambient-bg" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
+  <!-- NAVIGATION -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-text">CROSSWIRED</span>
+      </a>
+      <nav>
+        <a href="#law">Die EU-Pflicht</a>
+        <a href="#tech">Technologie</a>
+        <a href="#studio">Studio</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary">Pilotprojekt</a>
+    </div>
+  </header>
 
-  <!-- Mobile Menu Overlay -->
-  <nav id="mobile-menu" role="dialog" aria-label="Navigation">
-    <a href="#product">Produkt</a>
-    <a href="#features">Features</a>
-    <a href="#story">Story</a>
-    <a href="#contact">Kontakt</a>
-    <a href="#contact" class="btn btn-primary" style="font-size:1rem">Pilot starten</a>
-  </nav>
-
-  <!-- Page content wrapper (z-index above orbs) -->
-  <div id="page-content">
-
-    <!-- ══════════════════════════════════════════════
-         1. HEADER
-    ══════════════════════════════════════════════ -->
-    <header id="header">
-      <div class="header-inner">
-
-        <!-- Logo -->
-        <a href="#hero" class="logo" aria-label="Crosswired – Home">
-          <div class="logo-mark" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="34" height="34" rx="9" fill="rgba(10,10,16,0.8)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-              <line x1="8"  y1="18" x2="28" y2="18" stroke="#A4EF2C" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="18" y1="8"  x2="18" y2="28" stroke="#A4EF2C" stroke-width="1.5" stroke-linecap="round"/>
-              <rect x="11" y="11" width="14" height="14" rx="3" fill="none" stroke="rgba(164,239,44,0.4)" stroke-width="1"/>
-              <circle cx="18" cy="18" r="2.5" fill="#A4EF2C"/>
-            </svg>
-          </div>
-          <span class="logo-text">Crosswired</span>
-        </a>
-
-        <!-- Desktop nav -->
-        <nav aria-label="Hauptnavigation">
-          <a href="#product">Produkt</a>
-          <a href="#features">Features</a>
-          <a href="#story">Story</a>
-          <a href="#contact">Kontakt</a>
-        </nav>
-
-        <!-- Nav CTA -->
-        <div class="nav-cta">
-          <a href="#contact" class="btn btn-primary" style="padding:0.65rem 1.5rem; font-size:0.85rem;">
-            Pilot starten
-          </a>
-        </div>
-
-        <!-- Mobile hamburger -->
-        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content fade-up">
+      <div class="tag">DPP SAAS INFRASTRUCTURE</div>
+      <h1 class="hero-title">DIGITALER<br>PRODUKT<br>PASS.</h1>
+      <p class="hero-sub">
+        EU-Compliance (ESPR) trifft auf kryptografischen Fälschungsschutz.<br>
+        Für High-Fashion, Avantgarde und Brands, die ihren Wert schützen.
+      </p>
+      <div class="hero-actions">
+        <a href="#law" class="btn btn-secondary">Warum jetzt?</a>
       </div>
-    </header>
+    </div>
+    
+    <!-- Image Placeholder -->
+    <div class="hero-image-container fade-in delay-1">
+      <img src="images/hero-garment.jpg" alt="High Fashion Garment with Digital Overlay" class="placeholder-img" />
+      <div class="img-caption">PLATZIERE HIER EIN GANZKÖRPERBILD (images/hero-garment.jpg)</div>
+    </div>
+  </section>
 
-
-    <!-- ══════════════════════════════════════════════
-         2. HERO SECTION
-    ══════════════════════════════════════════════ -->
-    <section id="hero" aria-label="Hero">
-
-      <!-- Left: Content -->
-      <div class="hero-content">
-
-        <div class="hero-eyebrow fade-up">
-          <span class="hero-eyebrow-dot" aria-hidden="true"></span>
-          EU Digital Product Passport · 2026
+  <!-- THE LAW (EU ESPR) -->
+  <section id="law" class="section-dark">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-left fade-up">
+          <h2 class="section-title">DIE EU<br>VERORDNUNG<br><span class="text-accent">(ESPR)</span></h2>
         </div>
-
-        <h1 class="hero-headline fade-up delay-1">
-          Crosswired —<br />
-          Der <em>Digitale</em><br />
-          Produktpass für<br />
-          wegweisende<br />
-          Modemarken.
-        </h1>
-
-        <p class="hero-sub fade-up delay-2">
-          Compliance ist die Pflicht.<br />
-          Crosswired ist das Upgrade für deine Brand.<br />
-          Stylisch, sicher, datengesteuert.
-        </p>
-
-        <div class="hero-actions fade-up delay-3">
-          <a href="#contact" class="btn btn-primary btn-lg">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M8 1l7 7-7 7M1 8h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Pilot-Projekt Starten
-          </a>
-          <a href="#product" class="btn btn-ghost">
-            Mehr erfahren
-          </a>
-        </div>
-
-        <div class="hero-scroll-hint fade-in delay-5" aria-hidden="true">
-          <span class="scroll-line"></span>
-          Scroll
+        <div class="split-right fade-left delay-1">
+          <p class="large-text">
+            Ab 2026/2027 wird der Digitale Produktpass (DPP) zur gesetzlichen Pflicht für alle Textilien, die in der EU verkauft werden.
+          </p>
+          <ul class="brutalist-list">
+            <li><strong>Intransparenz wird illegal:</strong> Vollständige Offenlegung von Materialien, Herkunft und Recycling-Fähigkeit.</li>
+            <li><strong>Zwang zur Digitalisierung:</strong> Jedes Kleidungsstück muss eindeutig digital identifizierbar sein.</li>
+            <li><strong>Das Problem:</strong> Traditionelle IT-Systeme von Fashion-Brands sind nicht auf Einzelteil-Tracking auf SaaS-Basis ausgelegt.</li>
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Right: Phone visual -->
-      <div class="hero-visual fade-in delay-2" aria-hidden="true">
-
-        <!-- Ambient glow -->
-        <div class="hero-glow-bg"></div>
-
-        <!-- Floating glass shapes -->
-        <div class="float-shape float-shape-1"></div>
-        <div class="float-shape float-shape-2"></div>
-        <div class="float-shape float-shape-3"></div>
-
-        <!-- NFC verified floating badge -->
-        <div class="float-chip-badge">
-          <div class="badge-icon">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M2 5l2.5 2.5L8 2.5" stroke="#080808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <span class="badge-text">NFC VERIFIZIERT</span>
-        </div>
-
-        <!-- QR scan floating badge -->
-        <div class="float-qr-badge">
-          <!-- Tiny QR code SVG -->
-          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="44" height="44" rx="6" fill="#F5F2EC"/>
-            <!-- QR corner squares -->
-            <rect x="4"  y="4"  width="14" height="14" rx="2" fill="#1A1A1A"/>
-            <rect x="6"  y="6"  width="10" height="10" rx="1" fill="#F5F2EC"/>
-            <rect x="8"  y="8"  width="6"  height="6"  rx="1" fill="#1A1A1A"/>
-            <rect x="26" y="4"  width="14" height="14" rx="2" fill="#1A1A1A"/>
-            <rect x="28" y="6"  width="10" height="10" rx="1" fill="#F5F2EC"/>
-            <rect x="30" y="8"  width="6"  height="6"  rx="1" fill="#1A1A1A"/>
-            <rect x="4"  y="26" width="14" height="14" rx="2" fill="#1A1A1A"/>
-            <rect x="6"  y="28" width="10" height="10" rx="1" fill="#F5F2EC"/>
-            <rect x="8"  y="30" width="6"  height="6"  rx="1" fill="#1A1A1A"/>
-            <!-- QR dots -->
-            <rect x="22" y="22" width="4" height="4" rx="1" fill="#A4EF2C"/>
-            <rect x="28" y="22" width="4" height="4" rx="1" fill="#1A1A1A"/>
-            <rect x="34" y="22" width="4" height="4" rx="1" fill="#1A1A1A"/>
-            <rect x="22" y="28" width="4" height="4" rx="1" fill="#1A1A1A"/>
-            <rect x="28" y="28" width="4" height="4" rx="1" fill="#1A1A1A"/>
-            <rect x="34" y="28" width="4" height="4" rx="1" fill="#A4EF2C"/>
-            <rect x="22" y="34" width="4" height="4" rx="1" fill="#1A1A1A"/>
-            <rect x="28" y="34" width="4" height="4" rx="1" fill="#A4EF2C"/>
-            <rect x="34" y="34" width="4" height="4" rx="1" fill="#1A1A1A"/>
-          </svg>
-        </div>
-
-        <!-- Phone mockup -->
-        <div class="phone-mockup">
-          <div class="phone-shell">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-
-              <div class="pscreen-header">
-                <span class="pscreen-brand">MAISON&nbsp;X</span>
-                <div class="pscreen-verified">
-                  <div class="pscreen-verified-dot"></div>
-                  Verifiziert
-                </div>
-              </div>
-
-              <div class="pscreen-img">
-                <!-- Placeholder for garment image -->
-                <div style="position:absolute;inset:0;background:linear-gradient(160deg,#1A1A24 0%,#0E0E18 50%,#1C1024 100%);"></div>
-                <!-- Lime highlight orb -->
-                <div style="position:absolute;top:-30%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(164,239,44,0.18) 0%,transparent 65%);filter:blur(24px);"></div>
-                <!-- Garment silhouette lines -->
-                <svg style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);opacity:0.25;" width="100" height="120" viewBox="0 0 100 120" fill="none">
-                  <path d="M30 10 L20 30 L10 35 L15 80 L85 80 L90 35 L80 30 L70 10 Z" stroke="#A4EF2C" stroke-width="0.8" fill="none"/>
-                  <path d="M30 10 Q50 5 70 10" stroke="#A4EF2C" stroke-width="0.8" fill="none"/>
-                  <line x1="50" y1="10" x2="50" y2="80" stroke="rgba(164,239,44,0.3)" stroke-width="0.5" stroke-dasharray="3 3"/>
-                </svg>
-                <div class="pscreen-tag">
-                  <div class="pscreen-tag-line1">DRESSES</div>
-                  <div class="pscreen-tag-line2">BOILED MERINO WOOL</div>
-                </div>
-              </div>
-
-              <div class="pscreen-details">
-                <div class="pscreen-detail-row">
-                  <span class="pscreen-detail-key">Material</span>
-                  <span class="pscreen-detail-val">100% Merino</span>
-                </div>
-                <div class="pscreen-detail-row">
-                  <span class="pscreen-detail-key">Herkunft</span>
-                  <span class="pscreen-detail-val">Italien</span>
-                </div>
-                <div class="pscreen-detail-row">
-                  <span class="pscreen-detail-key">DPP-ID</span>
-                  <span class="pscreen-detail-val" style="color:var(--lime);font-size:0.38rem;">CW·24A·0042</span>
-                </div>
-                <div class="pscreen-detail-row">
-                  <span class="pscreen-detail-key">EU-Konform</span>
-                  <span class="pscreen-detail-val" style="color:#A4EF2C;">✓ 2026</span>
-                </div>
-              </div>
-
-            </div><!-- /phone-screen -->
-          </div><!-- /phone-shell -->
-        </div><!-- /phone-mockup -->
-
-      </div><!-- /hero-visual -->
-    </section>
-
-
-    <!-- ══════════════════════════════════════════════
-         3. PROBLEM / CONTEXT SECTION
-    ══════════════════════════════════════════════ -->
-    <section id="problem" aria-label="Das Problem">
-      <div class="problem-inner">
-
-        <p class="problem-label fade-up">Context</p>
-
-        <h2 class="problem-headline fade-up delay-1">
-          Die EU-Richtlinie kommt.<br />Sei bereit.
-        </h2>
-
-        <div class="problem-grid">
-
-          <div class="problem-item fade-up delay-1">
-            <p class="problem-num">01</p>
-            <h3 class="problem-title">Pflicht-Compliance</h3>
-            <p class="problem-body">
-              Ab 2027 verlangt die EU für jedes in der EU verkaufte Kleidungsstück einen
-              Digitalen Produktpass. Kein DPP, kein Marktzugang — für jede Brand, jeder Größe.
-            </p>
-          </div>
-
-          <div class="problem-item fade-up delay-2">
-            <p class="problem-num">02</p>
-            <h3 class="problem-title">Fehlender Kundenkontakt</h3>
-            <p class="problem-body">
-              Der Kauf eines Kleidungsstücks ist oft der letzte Berührungspunkt zwischen Brand
-              und Kunde. Der digitale Pass ist eine einmalige Chance, diese Verbindung
-              dauerhaft zu etablieren.
-            </p>
-          </div>
-
-          <div class="problem-item fade-up delay-3">
-            <p class="problem-num">03</p>
-            <h3 class="problem-title">Fälschungsschutz</h3>
-            <p class="problem-body">
-              High-Fashion und Streetwear sind massiv durch Plagiate bedroht. Herkömmliche
-              QR-Codes sind kopierbar — kryptografisch gesicherte NFC-Chips nicht.
-            </p>
-          </div>
-
-        </div>
-
+  <!-- THE SOLUTION / TECH -->
+  <section id="tech" class="section-light">
+    <div class="container">
+      <div class="center-header fade-up">
+        <div class="tag tag-dark">UNSERE LÖSUNG</div>
+        <h2 class="section-title text-dark">ZWEI WEGE.<br>EINE PLATTFORM.</h2>
+        <p class="sub-text text-dark">Egal ob reine Compliance oder maximaler Schutz für Premium-Pieces – unser AWS-Backend verwaltet beides nahtlos.</p>
       </div>
-    </section>
 
-    <div class="section-divider" role="separator"></div>
-
-
-    <!-- ══════════════════════════════════════════════
-         4. TWO PATHS SECTION (interactive)
-    ══════════════════════════════════════════════ -->
-    <section id="product" aria-label="Zwei Wege zum DPP">
-      <div class="paths-inner">
-
-        <div class="section-header">
-          <p class="problem-label fade-up">Das Produkt</p>
-          <h2 class="display-lg fade-up delay-1">Zwei Wege zum<br />Digitalen Produktpass</h2>
+      <div class="tech-grid">
+        <!-- QR Code -->
+        <div class="tech-card fade-up delay-1">
+          <div class="tech-card-image">
+            <img src="images/qr-label.jpg" alt="QR Code Label" class="placeholder-img" />
+            <div class="img-caption">BILD VON EINEM QR-LABEL HIER (images/qr-label.jpg)</div>
+          </div>
+          <div class="tech-card-content">
+            <h3>01. QR-CODES</h3>
+            <div class="badge">Essential Compliance</div>
+            <p>Der kosteneffiziente Weg zur sofortigen EU-Gesetzeskonformität. Ein sauber integrierter QR-Code auf dem Care-Label führt direkt zur lückenlosen, gehosteten Produktdatenbank.</p>
+          </div>
         </div>
 
-        <div class="paths-grid">
-
-          <!-- PATH 1: QR Code Essential -->
-          <article class="path-card glass fade-left delay-1" role="article" aria-label="QR Code Weg">
-            <div class="glass-wipe" aria-hidden="true"></div>
-
-            <!-- Visual area -->
-            <div class="path-visual">
-              <div class="path-visual-bg"></div>
-              <!-- Subtle gradient overlay -->
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,10,16,0.95) 100%);z-index:2;"></div>
-              <!-- Lime orb -->
-              <div style="position:absolute;top:-20%;left:-10%;width:70%;height:70%;background:radial-gradient(circle,rgba(164,239,44,0.12) 0%,transparent 65%);filter:blur(30px);z-index:1;"></div>
-
-              <div class="path-visual-content" style="z-index:3;">
-                <div class="qr-visual-inner">
-
-                  <!-- Woven label mockup -->
-                  <div class="label-mockup">
-                    <span class="label-brand-name">Brand Label</span>
-                    <div class="qr-grid"></div>
-                    <span class="label-care">100% Merino · Care Instructions</span>
-                  </div>
-
-                  <!-- Scan animation -->
-                  <div style="display:flex;align-items:center;gap:0.6rem;">
-                    <div class="scan-anim">
-                      <div class="scan-ring"></div>
-                      <div class="scan-ring"></div>
-                      <div class="scan-ring"></div>
-                      <div style="position:absolute;inset:8px;background:var(--lime);border-radius:50%;opacity:0.6;"></div>
-                    </div>
-                    <span style="font-size:0.6rem;letter-spacing:0.12em;color:var(--lime);font-weight:700;text-transform:uppercase;">Scan to verify</span>
-                  </div>
-
-                </div>
-              </div>
-            </div><!-- /path-visual -->
-
-            <!-- Content -->
-            <div class="path-content">
-              <span class="path-badge path-badge-essential">Essential Compliance</span>
-
-              <h3 class="path-title">QR-Code</h3>
-
-              <p class="path-body">
-                Der schnellste und kosteneffizienteste Weg, um die gesetzlichen Anforderungen
-                der EU zu 100&nbsp;% zu erfüllen. Ein diskreter, hochwertig gedruckter QR-Code
-                auf dem Kleidungsetikett führt Kunden direkt zur
-                <strong>gesetzeskonformen Produktseite</strong> — vollständige Materialangaben,
-                Herkunft, Pflege und mehr.
-              </p>
-
-              <p class="path-tag">
-                ✓ &nbsp;EU-konform &nbsp;·&nbsp; ✓ &nbsp;Schnelle Integration &nbsp;·&nbsp; ✓ &nbsp;Kosteneffizient
-              </p>
-            </div>
-
-          </article>
-
-          <!-- PATH 2: NFC Chip Premium -->
-          <article class="path-card glass fade-right delay-2" role="article" aria-label="NFC Chip Weg">
-            <div class="glass-wipe" aria-hidden="true"></div>
-
-            <!-- Visual area -->
-            <div class="path-visual" style="background:linear-gradient(135deg,#0E0E18,#14141E);">
-              <div class="path-visual-bg"></div>
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,10,16,0.95) 100%);z-index:2;"></div>
-              <div style="position:absolute;top:-10%;right:-10%;width:80%;height:80%;background:radial-gradient(circle,rgba(164,239,44,0.16) 0%,transparent 60%);filter:blur(40px);z-index:1;"></div>
-
-              <div class="path-visual-content" style="z-index:3;">
-                <div class="nfc-visual-inner">
-
-                  <!-- NFC Tag mockup -->
-                  <div class="nfc-tag-mockup">
-                    <div class="nfc-chip-icon"></div>
-                  </div>
-
-                  <!-- Wave animation -->
-                  <div class="nfc-waves">
-                    <div class="nfc-wave"></div>
-                    <div class="nfc-wave"></div>
-                    <div class="nfc-wave"></div>
-                  </div>
-
-                  <!-- Verified badge -->
-                  <div class="verified-badge">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                      <path d="M2 5l2.5 2.5L8 2.5" stroke="#A4EF2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Original verifiziert
-                  </div>
-
-                  <span class="aes-badge">AES-128 · NTAG 424 DNA · SDM</span>
-
-                </div>
-              </div>
-            </div><!-- /path-visual -->
-
-            <!-- Content -->
-            <div class="path-content">
-              <span class="path-badge path-badge-premium">
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
-                  <path d="M4 1l.9 2.7H8L5.6 5.3l.9 2.7L4 6.4l-2.5 1.6.9-2.7L0 3.7h3.1z" fill="#A4EF2C"/>
-                </svg>
-                Premium &amp; Verifikation
-              </span>
-
-              <h3 class="path-title">NFC-Chip</h3>
-
-              <p class="path-body">
-                Das Upgrade für High-Fashion und Streetwear. Ein unsichtbar eingenähter
-                NFC-Tag. Neben den Produktdaten bietet er eine
-                <strong>kryptografische AES-128-Echtheitsprüfung</strong> via NTAG&nbsp;424&nbsp;DNA.
-                Kunden verifizieren mit einem einzigen Tap die Originalität des Kleidungsstücks
-                — <strong>unkopierbar und absolut fälschungssicher</strong>. Kein App-Download nötig.
-              </p>
-
-              <p class="path-tag" style="color:var(--lime);border-top-color:rgba(164,239,44,0.15);">
-                ✓ &nbsp;Anti-Counterfeiting &nbsp;·&nbsp; ✓ &nbsp;Tap to verify &nbsp;·&nbsp; ✓ &nbsp;High-Fashion ready
-              </p>
-            </div>
-
-          </article>
-
-        </div><!-- /paths-grid -->
-      </div>
-    </section>
-
-    <div class="section-divider" role="separator"></div>
-
-
-    <!-- ══════════════════════════════════════════════
-         5. B2B FEATURES GRID
-    ══════════════════════════════════════════════ -->
-    <section id="features" aria-label="Features">
-      <div class="features-inner">
-
-        <div class="section-header">
-          <p class="problem-label fade-up">Was wir übernehmen</p>
-          <h2 class="display-lg fade-up delay-1">
-            Was Crosswired für<br />deine Brand übernimmt
-          </h2>
+        <!-- NFC -->
+        <div class="tech-card fade-up delay-2">
+          <div class="tech-card-image">
+            <img src="images/nfc-chip.jpg" alt="NFC Chip in Fabric" class="placeholder-img" />
+            <div class="img-caption">BILD VOM NFC CHIP / MAKRO (images/nfc-chip.jpg)</div>
+          </div>
+          <div class="tech-card-content">
+            <h3>02. KRYPTO-NFC</h3>
+            <div class="badge badge-accent">Premium Authentication</div>
+            <p>Für High-Fashion & Avantgarde. Unsichtbar integrierte NTAG 424 DNA Chips mit AES-128 Verschlüsselung. Jedes Scannen generiert einen dynamischen Code. 100% fälschungssicher. Kein App-Download nötig.</p>
+          </div>
         </div>
-
-        <div class="features-grid">
-
-          <!-- Feature 1: Hosting -->
-          <div class="feature-card glass" aria-label="Gesetzeskonformes Hosting">
-            <div class="feature-icon" aria-hidden="true">
-              <!-- Cloud/Gavel icon -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-                <path d="M13 15l2 2 4-4" stroke="#A4EF2C" stroke-width="1.8"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Gesetzeskonformes Hosting</h3>
-            <p class="feature-body">
-              Wir stellen die optimierte Produktseite bereit und garantieren die lückenlose
-              Verfügbarkeit der Daten für Behörden und Endkunden — EU-DSGVO-konform,
-              24&thinsp;/&thinsp;7 erreichbar, mit 99,9&thinsp;% Uptime-Garantie.
-            </p>
-          </div>
-
-          <!-- Feature 2: Analytics -->
-          <div class="feature-card glass" aria-label="Anonyme Insights">
-            <div class="feature-icon" aria-hidden="true">
-              <!-- Data/globe icon -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                <circle cx="18" cy="8" r="2" fill="#A4EF2C" stroke="none"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Anonyme Insights</h3>
-            <p class="feature-body">
-              Sieh genau, wie deine Kollektionen performen. Wir tracken Scans weltweit —
-              komplett anonymisiert und DSGVO-konform. Erfahre, wo, wann und wie oft
-              deine Produkte verifiziert werden.
-            </p>
-          </div>
-
-          <!-- Feature 3: Design -->
-          <div class="feature-card glass" aria-label="Design-Anpassung">
-            <div class="feature-icon" aria-hidden="true">
-              <!-- Palette icon -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10c0-2.8-2.5-5-5-5h-1a2 2 0 0 1-2-2v-1c0-1.1-.5-2.1-2-2z"/>
-                <circle cx="8.5"  cy="10.5" r="1" fill="#A4EF2C" stroke="none"/>
-                <circle cx="14.5" cy="8.5"  r="1" fill="#A4EF2C" stroke="none"/>
-                <circle cx="16.5" cy="13.5" r="1" fill="#A4EF2C" stroke="none"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Design-Anpassung</h3>
-            <p class="feature-body">
-              Keine sterilen Tabellen. Das Interface wird an deine Corporate Identity angepasst,
-              damit das digitale Erlebnis nahtlos zur physischen Kleidung passt — Farben,
-              Fonts, Imagery, Tonalität.
-            </p>
-          </div>
-
-          <!-- Feature 4: Data -->
-          <div class="feature-card glass" aria-label="Datenbereitstellung">
-            <div class="feature-icon" aria-hidden="true">
-              <!-- Document/key icon -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="8"  y1="13" x2="16" y2="13"/>
-                <line x1="8"  y1="17" x2="12" y2="17"/>
-                <circle cx="17" cy="17" r="2" stroke="#A4EF2C"/>
-                <line x1="18.4" y1="18.4" x2="21" y2="21" stroke="#A4EF2C"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Datenbereitstellung</h3>
-            <p class="feature-body">
-              Wir stellen die vollständige Datenbasis bereit, die Behörden und Prüfinstanzen
-              benötigen. Strukturierter Export, API-Zugang und revisionssichere Archivierung
-              inklusive — alles, was du für eine lückenlose Compliance brauchst.
-            </p>
-          </div>
-
-        </div><!-- /features-grid -->
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="section-divider" role="separator"></div>
-
-
-    <!-- ══════════════════════════════════════════════
-         6. STORY SECTION
-    ══════════════════════════════════════════════ -->
-    <section id="story" aria-label="Unsere Story">
-      <div class="story-accent" aria-hidden="true"></div>
-
-      <div class="story-inner">
-
-        <p class="story-label fade-up">Unsere Geschichte</p>
-
-        <h2 class="story-headline fade-up delay-1">
-          BORN IN<br />
-          UNDERGROUND<br />
-          <span class="text-lime">FASHION.</span><br />
-          POWERED BY PR.
-        </h2>
-
-        <div class="story-layout">
-
-          <!-- Left: Text -->
-          <div class="fade-left delay-2">
-            <p class="story-text">
-              Crosswired ist nicht in einem sterilen Office entstanden, sondern auf dem Runway.
-              Initiiert als avantgardistisches Fashion-Event im legendären
-              <strong style="color:var(--text-primary);">Bootshaus in Köln</strong>,
-              stand Crosswired von Tag eins an für die Verschmelzung von
-              physischer Mode und digitalen Medien.
-            </p>
-            <br />
-            <p class="story-text">
-              Mit über <strong style="color:var(--lime);">450 Gästen</strong>,
-              <strong style="color:var(--lime);">11 Designern</strong> und einem breiten
-              medialen Echo — unter anderem durch RTL — kennen wir die Bedürfnisse der
-              Fashion-Szene aus eigener Erfahrung. Wir bauen Technologie, die
-              Fashion versteht.
-            </p>
-
-            <!-- TV Badge -->
-            <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
-              <div class="tv-badge">
-                <span class="tv-badge-dot"></span>
-                RTL Coverage
-              </div>
-              <div class="tv-badge" style="border-color:rgba(255,255,255,0.15);color:var(--text-muted);background:rgba(255,255,255,0.04);">
-                Cologne Fashion Week
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Stats -->
-          <div class="story-stats fade-right delay-2">
-
-            <div class="stat-card glass">
-              <div class="stat-num">
-                <span data-count="450" data-suffix="">0</span>
-              </div>
-              <div class="stat-label">Gäste beim Launch-Event</div>
-            </div>
-
-            <div class="stat-card glass">
-              <div class="stat-num">
-                <span data-count="11" data-suffix="">0</span>
-              </div>
-              <div class="stat-label">Designer beim Event</div>
-            </div>
-
-            <!-- Logo card -->
-            <div class="story-logo-card glass fade-up delay-4">
-              <!-- X logo -->
-              <div class="story-x-mark" aria-hidden="true">
-                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                  <line x1="12" y1="30" x2="48" y2="30" stroke="#A4EF2C" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="30" y1="12" x2="30" y2="48" stroke="#A4EF2C" stroke-width="2" stroke-linecap="round"/>
-                  <rect x="16" y="16" width="28" height="28" rx="5" fill="none" stroke="rgba(164,239,44,0.3)" stroke-width="1.5"/>
-                  <circle cx="30" cy="30" r="4" fill="#A4EF2C"/>
-                </svg>
-              </div>
-              <div style="font-size:0.85rem;font-weight:700;letter-spacing:0.04em;color:var(--text-primary);">CROSSWIRED</div>
-              <div class="story-location">Köln · Bootshaus · 2024</div>
-            </div>
-
-          </div><!-- /story-stats -->
-        </div><!-- /story-layout -->
-
-      </div>
-    </section>
-
-    <div class="section-divider" role="separator"></div>
-
-
-    <!-- ══════════════════════════════════════════════
-         7. HOW IT WORKS (PROCESS FLOW)
-    ══════════════════════════════════════════════ -->
-    <section id="process" aria-label="Wie es funktioniert">
-      <div class="process-inner">
-
-        <div class="section-header">
-          <p class="problem-label fade-up">Der Prozess</p>
-          <h2 class="display-lg fade-up delay-1">Wie es funktioniert</h2>
-          <p class="body-lg text-secondary fade-up delay-2" style="margin-top:1rem;max-width:520px;">
-            Von der Bestellung bis zur verifizierten Produktseite — in sechs klaren Schritten.
+  <!-- STUDIO / HERITAGE -->
+  <section id="studio" class="section-dark">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-left fade-up">
+          <img src="images/bootshaus-event.jpg" alt="Crosswired Bootshaus Event" class="placeholder-img" style="height: 100%; object-fit: cover;" />
+          <div class="img-caption">EVENT BILD BOOTSHAUS HIER (images/bootshaus-event.jpg)</div>
+        </div>
+        <div class="split-right fade-left delay-1">
+          <div class="tag">MEDIA X FASHION</div>
+          <h2 class="section-title">GEBOREN AUF<br>DEM RUNWAY.</h2>
+          <p class="large-text" style="font-size: 1.2rem; margin-top: 2rem;">
+            Crosswired ist kein steriles IT-Projekt. Wir kommen aus der Szene.
+          </p>
+          <p style="color: #888; margin-top: 1rem; line-height: 1.6;">
+            Unsere Wurzeln liegen im legendären Bootshaus Köln, wo wir mit der ersten "Crosswired" Fashion-Show (450 Gäste, 68 Crew-Mitglieder, RTL Coverage) bewiesen haben, wie man Mode und Technologie (3D-Modelle, digitale Identitäten) auf einer Bühne vereint. Wir bauen Tech, die die Ästhetik und den Wert deiner Designs respektiert.
           </p>
         </div>
-
-        <!-- Horizontal flow -->
-        <div class="process-flow" role="list">
-
-          <div class="process-step" role="listitem">
-            <div class="process-dot" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="process-text">
-              <p class="process-step-num">01</p>
-              <p class="process-step-title">DPP<br />Bestellen</p>
-            </div>
-          </div>
-
-          <div class="process-step" role="listitem">
-            <div class="process-dot" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <rect x="3" y="2" width="12" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                <line x1="6" y1="6"  x2="12" y2="6"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="6" y1="9"  x2="12" y2="9"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="6" y1="12" x2="9"  y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="process-text">
-              <p class="process-step-num">02</p>
-              <p class="process-step-title">Daten<br />Erfassen</p>
-            </div>
-          </div>
-
-          <div class="process-step" role="listitem">
-            <div class="process-dot" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M9 6v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="process-text">
-              <p class="process-step-num">03</p>
-              <p class="process-step-title">Prog. &amp;<br />Integration</p>
-            </div>
-          </div>
-
-          <div class="process-step" role="listitem">
-            <div class="process-dot" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 2L3 5v5c0 4 3.5 6.5 6 7 2.5-.5 6-3 6-7V5L9 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="process-text">
-              <p class="process-step-num">04</p>
-              <p class="process-step-title">Produkt<br />mit DPP</p>
-            </div>
-          </div>
-
-          <div class="process-step" role="listitem">
-            <div class="process-dot" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <rect x="5" y="2" width="8" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="9" cy="13" r="1" fill="currentColor"/>
-                <path d="M3 7c1-2 3.5-3.5 6-3.5S13 5 14 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-              </svg>
-            </div>
-            <div class="process-text">
-              <p class="process-step-num">05</p>
-              <p class="process-step-title">Kunde<br />Scant</p>
-            </div>
-          </div>
-
-          <div class="process-step" role="listitem">
-            <div class="process-dot" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M6 9l2.5 2.5L13 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="process-text">
-              <p class="process-step-num">06</p>
-              <p class="process-step-title">Verifiziert<br />&amp; Tracking</p>
-            </div>
-          </div>
-
-        </div><!-- /process-flow -->
-
-        <!-- Process detail cards -->
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:4rem;" class="fade-up delay-3">
-
-          <div class="glass" style="border-radius:var(--radius-md);padding:1.5rem;">
-            <p style="font-size:0.62rem;letter-spacing:0.15em;color:var(--lime);font-weight:700;text-transform:uppercase;margin-bottom:0.5rem;">Schritte 1–2</p>
-            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;">
-              Du bestellst deinen DPP und übermittelst uns die Produktdaten
-              (Materialien, Herkunft, Pflege, Zertifikate).
-            </p>
-          </div>
-
-          <div class="glass" style="border-radius:var(--radius-md);padding:1.5rem;">
-            <p style="font-size:0.62rem;letter-spacing:0.15em;color:var(--lime);font-weight:700;text-transform:uppercase;margin-bottom:0.5rem;">Schritte 3–4</p>
-            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;">
-              Wir programmieren den NFC-Chip oder erstellen das QR-Label und
-              liefern alles produktionsfertig — inklusive Integration in deine Kollektion.
-            </p>
-          </div>
-
-          <div class="glass" style="border-radius:var(--radius-md);padding:1.5rem;">
-            <p style="font-size:0.62rem;letter-spacing:0.15em;color:var(--lime);font-weight:700;text-transform:uppercase;margin-bottom:0.5rem;">Schritte 5–6</p>
-            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;">
-              Dein Kunde scannt oder tappt — und sieht sofort die verifizierten Produktdaten.
-              Du siehst in deinem Dashboard, wo und wann das passiert.
-            </p>
-          </div>
-
-        </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section id="contact" class="section-light">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <h2 class="section-title text-dark fade-up">BEREIT FÜR DIE<br>ZUKUNFT?</h2>
+      <p class="sub-text text-dark fade-up delay-1" style="margin: 2rem auto;">
+        Wir skalieren aktuell unsere AWS-Infrastruktur und suchen visionäre Pilot-Brands für die Beta-Phase. Sichere dir den Vorsprung vor dem Gesetz.
+      </p>
+      <a href="mailto:hello@girnstein.studio" class="btn btn-primary btn-large fade-up delay-2">hello@girnstein.studio</a>
+    </div>
+  </section>
 
-    <!-- ══════════════════════════════════════════════
-         8. CONTACT & FOOTER
-    ══════════════════════════════════════════════ -->
-    <footer id="contact" aria-label="Kontakt und Footer">
-      <div class="contact-inner">
-
-        <div class="contact-layout">
-
-          <!-- Left: Text content -->
-          <div class="fade-left">
-            <p class="problem-label" style="margin-bottom:1.5rem;">Kontakt</p>
-
-            <h2 class="contact-headline">
-              Bereit für dein<br />
-              <em>Pilot-Projekt?</em>
-            </h2>
-
-            <p class="contact-sub">
-              Erzähl uns von deiner Brand. Wir melden uns innerhalb von 48&nbsp;Stunden
-              mit einem individuellen Angebot zurück.
-            </p>
-
-            <div class="contact-perks">
-              <div class="contact-perk">
-                <div class="perk-check" aria-hidden="true">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path d="M2 5l2.5 2.5L8 2.5" stroke="#A4EF2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                Kostenloses Erstgespräch
-              </div>
-              <div class="contact-perk">
-                <div class="perk-check" aria-hidden="true">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path d="M2 5l2.5 2.5L8 2.5" stroke="#A4EF2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                Individuelles Pilotpaket
-              </div>
-              <div class="contact-perk">
-                <div class="perk-check" aria-hidden="true">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path d="M2 5l2.5 2.5L8 2.5" stroke="#A4EF2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                Design-Demo innerhalb 5 Tagen
-              </div>
-              <div class="contact-perk">
-                <div class="perk-check" aria-hidden="true">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path d="M2 5l2.5 2.5L8 2.5" stroke="#A4EF2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                Keine langfristige Bindung
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Right: Contact form -->
-          <div class="fade-right delay-2">
-            <form id="contact-form" class="contact-form glass" novalidate aria-label="Kontaktformular">
-
-              <div class="form-group">
-                <label class="form-label" for="input-name">Dein Name</label>
-                <input
-                  id="input-name"
-                  type="text"
-                  class="form-input"
-                  placeholder="Max Mustermann"
-                  required
-                  autocomplete="name"
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="input-brand">Deine Brand / Firma</label>
-                <input
-                  id="input-brand"
-                  type="text"
-                  class="form-input"
-                  placeholder="Studio XY / Label Name"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="input-email">E-Mail</label>
-                <input
-                  id="input-email"
-                  type="email"
-                  class="form-input"
-                  placeholder="hello@deinbrand.de"
-                  required
-                  autocomplete="email"
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="input-message">Deine Kollektion / Anmerkungen <span style="color:var(--text-muted);text-transform:lowercase;letter-spacing:0;">(optional)</span></label>
-                <textarea
-                  id="input-message"
-                  class="form-input"
-                  placeholder="Erzähl uns kurz von deiner Brand und deinen Anforderungen…"
-                  rows="4"
-                ></textarea>
-              </div>
-
-              <div class="form-submit-wrap">
-                <button type="submit" class="btn btn-primary btn-lg form-submit-btn w-full" style="justify-content:center;">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M8 1l7 7-7 7M1 8h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  Pilot-Projekt Starten
-                </button>
-              </div>
-
-              <p style="font-size:0.72rem;color:var(--text-muted);text-align:center;line-height:1.5;">
-                Keine Spam. Keine Verpflichtung. Nur ein echtes Gespräch.
-              </p>
-
-            </form>
-
-            <!-- Success state -->
-            <div id="form-success" class="form-success" role="alert">
-              <div style="font-size:2rem;margin-bottom:0.5rem;" aria-hidden="true">✓</div>
-              Danke! Wir melden uns innerhalb von 48&nbsp;Stunden bei dir.
-            </div>
-          </div>
-
-        </div><!-- /contact-layout -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">CROSSWIRED SaaS</div>
+      <div class="footer-links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
       </div>
+    </div>
+  </footer>
 
-      <!-- Footer bar -->
-      <div class="footer-bar">
-
-        <!-- Logo + copy -->
-        <div>
-          <a href="#hero" class="logo" style="margin-bottom:0.4rem;display:inline-flex;" aria-label="Crosswired – Home">
-            <span class="logo-text" style="font-size:0.9rem;">CROSSWIRED</span>
-          </a>
-          <p class="footer-copy">
-            Copyright Crosswired &copy; 2026. Made with passion for fashion.
-          </p>
-        </div>
-
-        <!-- Legal links -->
-        <div class="footer-links">
-          <a href="#" aria-label="Impressum">Impressum</a>
-          <a href="#" aria-label="Datenschutz">Datenschutz</a>
-          <a href="#" aria-label="AGB">AGB</a>
-        </div>
-
-        <!-- Social icons -->
-        <div class="footer-socials">
-          <!-- Instagram -->
-          <a href="#" class="social-icon" aria-label="Instagram">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
-            </svg>
-          </a>
-          <!-- LinkedIn -->
-          <a href="#" class="social-icon" aria-label="LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-              <rect x="2" y="9" width="4" height="12"/>
-              <circle cx="4" cy="4" r="2"/>
-            </svg>
-          </a>
-          <!-- TikTok placeholder -->
-          <a href="#" class="social-icon" aria-label="TikTok">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.94a8.17 8.17 0 0 0 4.78 1.52V7.01a4.85 4.85 0 0 1-1.01-.32z"/>
-            </svg>
-          </a>
-        </div>
-
-      </div><!-- /footer-bar -->
-    </footer>
-
-  </div><!-- /page-content -->
-
-  <!-- Scripts -->
-  <script src="app.js" defer></script>
-
+  <script src="app.js"></script>
 </body>
 </html>
