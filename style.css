@@ -1,6 +1,6 @@
 /* ============================================================
    CROSSWIRED — Premium High-Fashion Tech Aesthetic
-   Brutalist, Minimal, High-Contrast
+   Brutalist, Minimal, High-Contrast · FIXED FOR IMAGES
    ============================================================ */
 
 :root {
@@ -107,7 +107,7 @@ a {
   width: 100%;
   padding: 1.5rem 2rem;
   z-index: 100;
-  mix-blend-mode: difference; /* Creates that cool inversion effect */
+  mix-blend-mode: difference;
   color: #fff;
 }
 
@@ -152,7 +152,7 @@ nav a:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-radius: 0; /* Brutalist sharp edges */
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -206,38 +206,24 @@ nav a:hover {
 .hero-image-container {
   width: 100%;
   height: 80vh;
-  background-color: #111;
+  background-color: transparent;
   position: relative;
   overflow: hidden;
 }
 
+/* --- BILDER FIX: VOLLKOMMEN KLAR, HELL UND FARBIG --- */
 .placeholder-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.4;
-  filter: grayscale(100%);
-  transition: opacity 0.5s ease, filter 0.5s ease;
+  opacity: 1 !important;        /* Volle Deckkraft dauerhaft */
+  filter: none !important;       /* Kein Schwarz-Weiß-Filter mehr */
 }
 
+/* Verhindert, dass beim Drüberfahren mit der Maus wieder Filter aktiv werden */
 .hero-image-container:hover .placeholder-img {
-  opacity: 0.8;
-  filter: grayscale(0%);
-}
-
-.img-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--accent);
-  font-family: 'Space Grotesk';
-  font-weight: 700;
-  text-align: center;
-  width: 80%;
-  border: 1px dashed var(--accent);
-  padding: 1rem;
-  background: rgba(0,0,0,0.8);
+  opacity: 1 !important;
+  filter: none !important;
 }
 
 /* --- SPLIT LAYOUT --- */
@@ -300,14 +286,14 @@ nav a:hover {
 
 .tech-card-image {
   height: 400px;
-  background: #eee;
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
 
 .tech-card-image .placeholder-img {
-  opacity: 0.5;
-  filter: none;
+  opacity: 1 !important;
+  filter: none !important;
 }
 
 .tech-card-content {
@@ -407,6 +393,6 @@ footer {
     grid-template-columns: 1fr;
   }
   nav {
-    display: none; /* Add hamburger menu logic in JS if needed */
+    display: none;
   }
 }
